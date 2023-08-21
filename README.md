@@ -43,11 +43,17 @@ Ejecutamos los siguientes comandos
 
 Corremos el servidor
 
-	 mvn exec:java -"Dexec.mainClass"="org.myorg.HttpServer"
+	 mvn exec:java -"Dexec.mainClass"="escuelaing.arep.HttpServer"
 
 Accedemos a la siguiente URL
 
 	 https://localhost:35000/
+
+## Running the tests
+
+Ejecutamos el comando
+
+	mvn test
 
 ## Built With
 * [Java](https://www.java.com/) - Lenguaje de programación principal

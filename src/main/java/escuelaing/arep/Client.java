@@ -9,14 +9,12 @@ public class Client {
 
     /**
      * Método principal para ejecutar las pruebas del servidor.
-     *
      */
     public static void main(String[] args) {
         int numThreads = 5;
 
         for (int i = 0; i < numThreads; i++) {
             Thread thread = new Thread(new Runnable() {
-                @Override
                 public void run() {
                     try {
                         testServer();
@@ -34,7 +32,7 @@ public class Client {
      *
      * @throws IOException Si ocurre un error en la comunicación con el servidor.
      */
-    private static void testServer() throws IOException {
+    public static void testServer() throws IOException {
         HttpConnection httpConnection = new HttpConnection();
 
         String[] movieTitles = {"Guardians of the Galaxy", "The Avengers", "Fast and Furious"};
